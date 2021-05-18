@@ -11,11 +11,7 @@
 
 <body style="margin : 0px; overflow: hidden;">
 <a-scene embedded arjs="sourceType: webcam;">
-        <a-marker type="pattern" url="pattern-22.patt">
-            <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-            <a-entity position="0 -1 0" scale="0.05 0.05 0.05" gltf-model="scene.gltf">
-            </a-entity>
-        </a-marker>
-        <a-entity camera></a-entity>
+    <a-entity position="0 0.5 0" gltf-model="scene.gltf"></a-entity>
+    <a-marker-camera type='pattern'  url='pattern-22.patt'></a-marker-camera>
 </a-scene>
 </body>
