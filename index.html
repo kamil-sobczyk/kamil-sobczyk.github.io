@@ -11,14 +11,14 @@
         <!--    <a-entity position="0 0.5 0" gltf-model="scene.gltf"></a-entity>-->
         <a-entity gltf-model="#test" position="0 0.5 0" scale="0.001 0.001 0.001">
         </a-entity>
-        <a-marker type='pattern' url='3.patt' smooth="true"></a-marker>
+        <a-marker-camera type='pattern' url='3.patt'></a-marker-camera>
     </a-scene>
 </body>
 <script>console.log('SSSCCCRRRRIIIIPPTTTTT')
     window.addEventListener('DOMContentLoaded', (event) => {
         console.log('XaX', document.querySelector('#arjsDebugUIContainer'))
         console.log('XaXo11', document.querySelector('div#arjsDebugUIContainer'))
-        console.log('XaXo11', document)
+        console.log('XaXo11', document.querySelectorAll('body'))
 
         // console.log('XX', document.getElementById('arjsDebugUIContainer'))
         // document.getElementById('arjsDebugUIContainer').style.display = 'none';
