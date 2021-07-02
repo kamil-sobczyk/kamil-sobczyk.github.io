@@ -14,8 +14,13 @@
         <a-marker-camera type='pattern' url='3.patt'></a-marker-camera>
     </a-scene>
 </body>
-<style>
-    #arjsDebugUIContainer {
-        display: none !important;
-    }
-</style>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        document.getElementById('arjsDebugUIContainer').style.display = 'none';
+        console.log('DOM fully loaded and parsed');
+    });
+
+    // #arjsDebugUIContainer {
+    //     display: none!important;
+    // }
+</script>
